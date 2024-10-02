@@ -1,0 +1,116 @@
+@media screen  and (max-width: 900px){
+    header .menu_desktop, header .btn_contato{
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 900px){
+    /* responsivo hero */
+
+    .hero_site .txt_hero h1{
+        font-size: 2.6em;
+        line-height: 45px;
+        
+    }
+
+@media screen and (max-width: 900px){
+    .carrosel{
+        width: 100%;
+    }
+
+    .container_carrossel img{
+        width: 100vw;
+        height: 80px;
+        object-fit: contain;
+    }
+
+
+}
+    
+    .hero_site .txt_hero p{
+        font-size: 15px;
+      
+    }
+    
+    .hero_site .txt_hero p span{
+        display: inline;
+    }
+    
+    .hero_site button {
+        font-size: 20px;
+    }
+
+
+
+    .sobre_nos_inicio .itens_container{
+        flex-direction: column;
+    }
+    
+    .sobre_nos_inicio .itens_container .img_logo img{
+        max-width: 100%;
+    }
+    
+    .sobre_nos_inicio .itens_container .txt_itens p{
+        margin-bottom: 80px;
+    }
+    
+    .solucoes .itens_container .item_1{
+        order: 1;
+    }
+    .solucoes .itens_container .item_2{
+        order: 0;
+    }
+
+    .solucoes .itens_container{
+        flex-direction: column;
+    }
+    
+    .solucoes .itens_container .img_itens img{
+        max-width: 100%;
+    }
+
+
+
+
+
+
+    .fornecedores .itens_container{
+        flex-direction: column;
+    }
+    
+    .fornecedores .itens_container .txt_itens h3{
+        display: flex;
+        font-size: 2.2em;
+    }   
+    
+    .fornecedores .itens_container .txt_itens h3 span{
+        font-weight: 200;
+        margin-right: 10px;
+    }
+
+
+
+
+    
+
+    .txt_contato,.icons_contato{
+        display: block;
+        width: 100%;
+    }
+    
+    .contato .txt_contato h3{
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .contato .txt_contato p{
+        margin-bottom: 25px;
+    }
+    
+    .contato .icons_contato button{
+        width: 100%;
+
+    }
+      
+ 
+}

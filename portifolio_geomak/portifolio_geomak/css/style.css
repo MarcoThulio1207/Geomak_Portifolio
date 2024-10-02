@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #E3E3E3;
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* Etilo do Header*/
+
+header {
+    width: 100%;
+    padding: 40px, 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transition: .5s;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{
+    max-width: 50px;
+}
+
+/* Estilo menu dinamico */
+
+header .logo img .logo_verde{
+    display: none;
+}
+
+header.rolar{
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 0 8px #000000;
+}
+
+header.rolar .menu_desktop nav ul li a{
+    color: #000;
+}
+
+header.rolar .btn_contato button{
+    border: 1px solid black;
+    color: black;
+}
+
+header.rolar .btn_contato button:hover{
+    background-color: green;
+    color: black;
+}
+
+header.rolar .logo .logo_branca{
+    display: block;
+}
+
+header.rolar .logo .logo_verde{
+    display: block;
+}
+
+/* Fim estilo dinamico */
+
+header .menu_desktop nav ul{
+    list-style-type: none;
+}
+
+header .menu_desktop nav ul li{
+    display: inline-block;
+    margin: 0  40px;
+}
+
+header .menu_desktop nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+}
+
+.menu_desktop nav a:hover{
+    transform: scale(1.05);
+}
+
+header .btn_contato button{
+    width: 140px;
+    height: 50px;
+}
+
+header .btn_contato button, .hero_site button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid green;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .5s;
+}
+
+header .btn_contato button:hover, .hero_site button:hover{
+    background-color: rgb(8, 84, 8);
+    color: white;
+}
+
+/* Estilo do hero (introdução do site) */
+
+section.hero_site{
+    height: 98vh;
+    background-image: url(../image/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff
+}
+
+.hero_site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}   
+
+.hero_site .txt_hero h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.hero_site .txt_hero h1 span{
+    display: block;
+    font-weight: 800;
+}
+
+.hero_site .txt_hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero_site .txt_hero p span{
+    display: block;
+}
+
+.hero_site button {
+    width: 220px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+
+/* Estilo front logo  + historia */
+
+section .sobre_nos_inicio{
+    padding: 80px  0;
+}
+
+.sobre_nos_inicio .itens_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20%;
+    margin-top: 15px;
+}
+
+.sobre_nos_inicio .itens_container .img_logo img{
+    display: block;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+}
+
+.sobre_nos_inicio .itens_container .txt_itens p{
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+/* Estilo das soluções */
+
+section .solucoes{
+    padding: 80px 0;
+}
+
+.solucoes .itens_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.solucoes .itens_container .img_itens img{
+    max-width: 495px;
+    padding: 15px;
+}
+
+.solucoes .itens_container .txt_itens h3 {
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens_container .txt_itens h3 span{
+    font-weight: 200;
+}
+
+
+/* Estilo fornecedores */
+
+section .fornecedores{
+    padding: 80px 0;
+}
+
+.fornecedores .itens_container{
+    justify-content: space-between;
+    gap: 20%;
+    margin-top: 15px;
+}
+
+.fornecedores .itens_container .txt_itens h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 5px;
+}   
+
+.fornecedores .itens_container .txt_itens h3 span{
+    font-weight: 200;
+    margin-right: 20px;
+}
+
+.fornecedores .itens_container .txt_itens p{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Estilo Carrosel */
+
+.carrosel{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.container_carrossel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    
+    
+}
+
+.carrosel .container_carrossel img{
+    object-fit: cover;
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+    padding: 8px;
+    
+}
+
+
+/* Estilo contato e botões */
+section .contato{
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.txt_contato,.icons_contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt_contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.contato .txt_contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.contato .icons_contato a{
+    text-decoration: none;
+}
+
+.contato .icons_contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contato .icons_contato button i{
+    font-size: 20px;
+}
+
+.contato .icons_contato button:hover{
+    background-color: green;
+}
+
+.contato .icons_contato button:hover i{
+    color: white;
+}
+
+.contato .icons_contato button:hover i, .contato .icons_contato button:hover p{
+    color: white;
+}
+
+/* Estilo rodapé */
+footer{
+    background-color: green;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .top_footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+footer .top_footer button:hover{
+    background-color:white;
+    color: green;
+    
+}
+
+footer .top_footer p{
+    color: white;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+footer .botton_footer {
+    border-top: 2px solid white;
+    margin-top: 20px;
+    
+
+}
+
+footer .botton_footer p{
+    color: white;
+    margin-top: 10px;
+    
+}
